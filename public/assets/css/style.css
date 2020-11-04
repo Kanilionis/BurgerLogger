@@ -7,6 +7,10 @@ li {
   font-weight: bold;
 }
 
+/* .hidden {
+  display: none;
+} */
+
 .hidden .change-devour{
   display: none
 }
@@ -19,4 +23,9 @@ img {
 
 h1, p {
   margin-left: 15%
+}
+
+.btn{
+  margin-right: 2px;
+  margin-bottom: 2px
 }
