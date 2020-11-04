@@ -1,5 +1,7 @@
 li {
   list-style: none;
+  margin-top: 5px;
+  /* margin-bottom: 5px */
 }
 
 
@@ -7,12 +9,8 @@ li {
   font-weight: bold;
 }
 
-/* .hidden {
-  display: none;
-} */
-
 .hidden .change-devour{
-  display: none
+  display: none;
 }
 
 img {
@@ -25,7 +23,15 @@ h1, p {
   margin-left: 15%
 }
 
-.btn{
-  margin-right: 2px;
-  margin-bottom: 2px
+
+.btn-toolbar{
+  float:right
+}
+
+.add-btn{
+  float: center
+}
+
+.delete-burger{
+  margin-left: 3px
 }

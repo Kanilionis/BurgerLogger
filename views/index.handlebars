@@ -12,7 +12,7 @@
   <div class="card text-center col-4">
     <div class="card-body">
       <h2 class="ready-to-eat card-title">READY TO EAT!</h2>
-        <ul>
+        <ul class="list-group text-left">
         {{#each burgers}}
           {{#unless devoured}}
             {{> burgers/burger-block devour=true}}
@@ -28,15 +28,14 @@
         <form class="create-form">
           <div class="form-group">
             <label for="ca"></label>
-            <input type="text" id="ca" name="name" placeholder="Burger Name">
+            <input type="text" id="ca" name="name" placeholder="burger name">
           </div>
           <div class="form-group">
             <label for="devoured">Has This Been Devoured?</label><br>
             <input type="radio" name="devour" value="1" checked> Oh Yes!<br>
             <input type="radio" name="devour" value="0"> Not Yet!
           </div>
-          <button type="submit" href="#" class="btn btn-dark btn-primary">Add Burger</button>
-  {{!-- <button><a type="submit" href="#" class="btn btn-primary">Add Burger</a></button> --}}
+          <button type="submit" href="#" class="add-btn btn-dark btn-primary">Add Burger</button>
         </form>
     </div>  
   </div>
@@ -45,7 +44,7 @@
    <div class="card text-center col-4">
     <div class="card-body">
       <h2 class="card-title">DEVOURED BURGERS!</h2>
-      <ul class="hidden">
+      <ul class="hidden list-group text-left">
         {{#each burgers}}
           {{#if devoured}}
             {{> burgers/burger-block devour=false}}
@@ -57,16 +56,6 @@
 </div>
 
 </div>
-
-{{!-- <div class="card text-center" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    
-  </div>
-</div> --}}
-
-  
 
 
 
