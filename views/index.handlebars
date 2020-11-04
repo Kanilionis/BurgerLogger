@@ -1,38 +1,73 @@
-<h1>EAT-DA-BURGER!</h1>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+        <img src="/assets/images/burger.png" alt="cheeseburger" height="300px" width="auto">
+    <h1 class="display-4">EAT-DA-BURGER</h1>
+    <p class="lead">GET READY FOR THE BEST BURGER OF YOUR LIFE!</p>
+  </div>
+</div>
 
-<h2>Burgers Ready to be Devoured!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devour=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>DEVOURED BURGERS!</h2>
-
-<ul class="hidden">
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devour=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+<div class="container-fluid">
+  <div class="row">
+  <div class="card text-center col-4">
+    <div class="card-body">
+      <h2 class="ready-to-eat card-title">Burgers Ready to be Devoured!</h2>
+        <ul>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burger-block devour=true}}
+          {{/unless}}
+        {{/each}}
+        </ul>
+    </div>
   </div>
 
-  <div class="form-group">
-    <label for="devoured">Has This Been Devoured?</label><br>
-    <input type="radio" name="devour" value="1" checked> Devoured!<br>
-    <input type="radio" name="devour" value="0"> Not Yet Devoured!
+  <div class="card text-center col-4">
+    <div class="card-body">
+      <h2 class="add-burger card-title">Add a Burger</h2>
+        <form class="create-form">
+          <div class="form-group">
+            <label for="ca">Burger Name:</label>
+            <input type="text" id="ca" name="name">
+          </div>
+          <div class="form-group">
+            <label for="devoured">Has This Been Devoured?</label><br>
+            <input type="radio" name="devour" value="1" checked> Devoured!<br>
+            <input type="radio" name="devour" value="0"> Not Yet Devoured!
+          </div>
+          <button type="submit" href="#" class="btn btn-dark btn-primary">Add Burger</button>
+  {{!-- <button><a type="submit" href="#" class="btn btn-primary">Add Burger</a></button> --}}
+        </form>
+    </div>  
   </div>
 
-  <button type="submit">Add Burger</button>
-</form>
+
+   <div class="card text-center col-4">
+    <div class="card-body">
+      <h2 class="card-title">DEVOURED BURGERS!</h2>
+      <ul class="hidden">
+        {{#each burgers}}
+          {{#if devoured}}
+            {{> burgers/burger-block devour=false}}
+          {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>
+
+{{!-- <div class="card text-center" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    
+  </div>
+</div> --}}
+
+  
+
+
+
+
