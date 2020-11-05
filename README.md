@@ -16,6 +16,8 @@
   ## Installation
   #### npm, handlebars, express, mySQL, bootstrap
   ## Usage
+  #### See deployed app on Heroku:
+  https://katieanilionis-burgerlogger.herokuapp.com/
   #### See link below for usage:
   https://drive.google.com/file/d/1_aEUNXF9_FmSXBQwQK07nQvBQRSLvXLu/view
   ### Console.log in bash terminal:
